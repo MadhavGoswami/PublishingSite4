@@ -6,71 +6,120 @@ import {
   BookMarked,
   GraduationCap,
   ArrowUpRight,
+  CheckCircle2,
+  Building2,
+  Users,
 } from "lucide-react";
 
 const teacherResources = [
   {
     title: "Lesson Planning Guides",
     description:
-      "Structured planning materials that help educators organize topics, learning objectives, and classroom flow with clarity.",
+      "Structured academic planning tools that help educators organise modules, learning outcomes, weekly flow, and classroom progression with greater clarity.",
     icon: ClipboardList,
+    label: "Planning Support",
   },
   {
     title: "Teaching Companion Notes",
     description:
-      "Instructor-focused notes, summaries, and academic references designed to support stronger classroom delivery.",
+      "Instructor-focused summaries, topic references, and companion materials designed to strengthen explanation quality and academic delivery.",
     icon: BookMarked,
+    label: "Classroom Delivery",
   },
   {
     title: "Presentation-Ready Content",
     description:
-      "Visually organized teaching assets and ready-to-use classroom support materials for modern instruction.",
+      "Visually organised teaching assets and ready-to-use instructional materials created for modern classrooms, workshops, and blended learning settings.",
     icon: Presentation,
+    label: "Ready to Use",
   },
   {
     title: "Faculty Development Support",
     description:
-      "Resources that assist institutions and educators in improving engagement, pedagogy, and subject delivery.",
+      "Practical academic resources that assist institutions and educators in improving pedagogy, engagement strategies, and subject confidence.",
     icon: GraduationCap,
+    label: "Institutional Growth",
   },
 ];
 
 export default function TeacherResources() {
   return (
-    <section className="relative overflow-hidden bg-[#f6f1e8] py-20 md:py-28">
+    <section className="relative overflow-hidden bg-[#f7f3eb] py-20 md:py-28 lg:py-32">
       {/* Background texture */}
       <div className="absolute inset-0 opacity-[0.035] bg-[linear-gradient(to_right,#1f2937_1px,transparent_1px),linear-gradient(to_bottom,#1f2937_1px,transparent_1px)] bg-[size:78px_78px]" />
       <div className="absolute -left-20 top-10 h-72 w-72 rounded-full bg-emerald-900/5 blur-3xl" />
       <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-amber-400/10 blur-3xl" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(36,70,61,0.06),transparent_28%),radial-gradient(circle_at_bottom_right,rgba(201,153,71,0.08),transparent_30%)]" />
 
       <div className="relative mx-auto max-w-7xl px-6 md:px-10">
-        <div className="grid gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+        <div className="grid gap-12 lg:grid-cols-[0.94fr_1.06fr] lg:items-center">
           {/* LEFT CONTENT */}
           <div className="max-w-2xl">
-            <p className="text-sm font-medium uppercase tracking-[0.28em] text-[#2f7d6b]">
-              Teacher Resources
-            </p>
+            <div className="inline-flex items-center gap-3 rounded-full border border-[#ddd2bf] bg-white/80 px-4 py-2 backdrop-blur-sm">
+              <span className="h-2 w-2 rounded-full bg-[#c99947]" />
+              <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[#2f7d6b] sm:text-xs">
+                Teacher Resources
+              </p>
+            </div>
 
-            <h2 className="mt-4 font-serif text-4xl leading-tight text-[#24463d] sm:text-5xl md:text-6xl">
-              Premium tools
-              <span className="block">for confident teaching</span>
+            <h2 className="mt-5 font-serif text-4xl leading-[1.02] tracking-[-0.03em] text-[#1f2937] sm:text-5xl md:text-6xl">
+              Premium teaching tools
+              <span className="block text-[#24463d]">for educators and institutions</span>
             </h2>
 
             <p className="mt-6 text-base leading-8 text-[#66707b] md:text-lg">
-              Support educators with refined teaching resources designed for
-              lesson planning, classroom engagement, subject delivery, and
-              academic consistency across institutions and learning environments.
+              Support faculty with refined teaching resources designed for lesson
+              preparation, classroom delivery, academic structure, and stronger
+              institutional learning outcomes across modern education settings.
             </p>
 
+            {/* Audience strip */}
+            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+              <div className="rounded-[1.4rem] border border-[#e7dece] bg-white/85 p-5 shadow-[0_12px_35px_rgba(15,23,42,0.04)]">
+                <div className="flex items-center gap-3">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#eef6f3]">
+                    <Users className="h-5 w-5 text-[#2f7d6b]" />
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#9a6b1f]">
+                      For Educators
+                    </p>
+                    <p className="mt-1 text-sm leading-6 text-[#66707b]">
+                      Day-to-day support for clearer teaching, better preparation,
+                      and more confident classroom delivery.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="rounded-[1.4rem] border border-[#e7dece] bg-white/85 p-5 shadow-[0_12px_35px_rgba(15,23,42,0.04)]">
+                <div className="flex items-center gap-3">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#eef6f3]">
+                    <Building2 className="h-5 w-5 text-[#2f7d6b]" />
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#9a6b1f]">
+                      For Institutions
+                    </p>
+                    <p className="mt-1 text-sm leading-6 text-[#66707b]">
+                      Faculty-ready materials that help colleges and schools
+                      improve consistency, support, and learning quality.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Stats */}
             <div className="mt-8 grid gap-5 sm:grid-cols-2">
-              <div className="rounded-[1.4rem] border border-[#e7dece] bg-white/80 p-5 shadow-[0_12px_35px_rgba(15,23,42,0.04)]">
+              <div className="rounded-[1.4rem] border border-[#e7dece] bg-[#fcfaf6] p-5 shadow-[0_12px_35px_rgba(15,23,42,0.04)]">
                 <p className="font-serif text-3xl text-[#24313d]">120+</p>
                 <p className="mt-2 text-sm leading-6 text-[#66707b]">
                   teaching support resources
                 </p>
               </div>
 
-              <div className="rounded-[1.4rem] border border-[#e7dece] bg-white/80 p-5 shadow-[0_12px_35px_rgba(15,23,42,0.04)]">
+              <div className="rounded-[1.4rem] border border-[#e7dece] bg-[#fcfaf6] p-5 shadow-[0_12px_35px_rgba(15,23,42,0.04)]">
                 <p className="font-serif text-3xl text-[#24313d]">35+</p>
                 <p className="mt-2 text-sm leading-6 text-[#66707b]">
                   subject-ready educator kits
@@ -78,27 +127,18 @@ export default function TeacherResources() {
               </div>
             </div>
 
+            {/* Benefits */}
             <div className="mt-8 space-y-4">
-              <div className="flex items-start gap-3">
-                <span className="mt-2 h-2.5 w-2.5 rounded-full bg-[#d39a33]" />
-                <p className="text-[15px] leading-7 text-[#4f5b67]">
-                  Designed to align with academic curriculum requirements
-                </p>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <span className="mt-2 h-2.5 w-2.5 rounded-full bg-[#d39a33]" />
-                <p className="text-[15px] leading-7 text-[#4f5b67]">
-                  Built for classroom clarity, structure, and engagement
-                </p>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <span className="mt-2 h-2.5 w-2.5 rounded-full bg-[#d39a33]" />
-                <p className="text-[15px] leading-7 text-[#4f5b67]">
-                  Helpful for individual educators and institutional faculty teams
-                </p>
-              </div>
+              {[
+                "Aligned with academic curriculum expectations and structured teaching delivery",
+                "Supports classroom clarity, engagement, and better learning continuity",
+                "Useful for individual teachers, faculty teams, and institutional departments",
+              ].map((point, index) => (
+                <div key={index} className="flex items-start gap-3">
+                  <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-[#c99947]" />
+                  <p className="text-[15px] leading-7 text-[#4f5b67]">{point}</p>
+                </div>
+              ))}
             </div>
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -106,8 +146,8 @@ export default function TeacherResources() {
                 Explore Teacher Resources
               </button>
 
-              <button className="rounded-full border border-[#d8c9ab] bg-white/80 px-7 py-3.5 text-sm font-semibold text-[#334155] transition duration-300 hover:border-[#c1943e] hover:bg-white">
-                Download Resource Guide
+              <button className="rounded-full border border-[#d8c9ab] bg-white/85 px-7 py-3.5 text-sm font-semibold text-[#334155] transition duration-300 hover:border-[#c1943e] hover:bg-white">
+                Download Faculty Guide
               </button>
             </div>
           </div>
@@ -121,7 +161,7 @@ export default function TeacherResources() {
                 return (
                   <article
                     key={index}
-                    className="group rounded-[1.8rem] border border-[#e9dfcf] bg-white/90 p-6 shadow-[0_18px_50px_rgba(15,23,42,0.05)] backdrop-blur-sm transition duration-300 hover:-translate-y-2 hover:shadow-[0_24px_60px_rgba(15,23,42,0.08)]"
+                    className="group rounded-[1.8rem] border border-[#e9dfcf] bg-white/92 p-6 shadow-[0_18px_50px_rgba(15,23,42,0.05)] backdrop-blur-sm transition duration-300 hover:-translate-y-2 hover:shadow-[0_24px_60px_rgba(15,23,42,0.08)]"
                   >
                     <div className="flex items-start justify-between gap-4">
                       <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#f8f3e8]">
@@ -136,7 +176,11 @@ export default function TeacherResources() {
                       </span>
                     </div>
 
-                    <h3 className="mt-6 font-serif text-2xl leading-snug text-[#24313d]">
+                    <p className="mt-6 text-[11px] font-semibold uppercase tracking-[0.2em] text-[#9a6b1f]">
+                      {item.label}
+                    </p>
+
+                    <h3 className="mt-3 font-serif text-2xl leading-snug text-[#24313d]">
                       {item.title}
                     </h3>
 
@@ -153,17 +197,17 @@ export default function TeacherResources() {
             </div>
 
             {/* floating support card */}
-            <div className="mt-6 rounded-[1.8rem] border border-[#eadfcb] bg-[#fcfaf6]/95 p-6 shadow-[0_18px_50px_rgba(40,40,40,0.06)] backdrop-blur-md">
+            <div className="mt-6 rounded-[1.8rem] border border-[#eadfcb] bg-[#fcfaf6]/95 p-6 shadow-[0_18px_50px_rgba(40,40,40,0.06)] backdrop-blur-md md:p-7">
               <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#9a6b1f]">
                 Faculty Support
               </p>
-              <h3 className="mt-2 font-serif text-2xl leading-snug text-[#24313d]">
-                Built to support better preparation and better outcomes
+              <h3 className="mt-2 font-serif text-2xl leading-snug text-[#24313d] md:text-[2rem]">
+                Built to strengthen preparation, delivery, and academic outcomes
               </h3>
               <p className="mt-3 max-w-2xl text-[15px] leading-7 text-[#66707b]">
-                Our teacher resources help faculty save preparation time,
+                Our teacher resources help educators reduce preparation time,
                 improve classroom structure, and access dependable academic
-                support materials for everyday teaching.
+                support materials that benefit both learners and institutions.
               </p>
             </div>
           </div>
