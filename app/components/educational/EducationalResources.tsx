@@ -27,7 +27,7 @@ const miniResources = [
 
 export default function EducationalResources() {
   return (
-    <section className="relative overflow-hidden bg-[#fbf8f2] py-20 md:py-28 lg:py-32">
+    <section id="ducational-resources" className="relative overflow-hidden bg-[#fbf8f2] py-20 md:py-28 lg:py-32">
       {/* Background accents */}
       <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(to_right,#1f2937_1px,transparent_1px),linear-gradient(to_bottom,#1f2937_1px,transparent_1px)] bg-[size:82px_82px]" />
       <div className="absolute -left-16 top-12 h-72 w-72 rounded-full bg-emerald-900/5 blur-3xl" />

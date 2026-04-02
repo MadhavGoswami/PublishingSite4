@@ -46,7 +46,7 @@ const reviews = [
 
 export default function InstitutionReviews() {
   return (
-    <section className="relative overflow-hidden bg-[#f7f3eb] py-20 md:py-28 lg:py-32">
+    <section id="institution-reviews" className="relative overflow-hidden bg-[#f7f3eb] py-20 md:py-28 lg:py-32">
       {/* Background */}
       <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(to_right,#1f2937_1px,transparent_1px),linear-gradient(to_bottom,#1f2937_1px,transparent_1px)] bg-[size:78px_78px]" />
       <div className="absolute -left-20 top-10 h-72 w-72 rounded-full bg-emerald-900/5 blur-3xl" />

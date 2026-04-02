@@ -47,7 +47,7 @@ const stats = [
 
 export default function InstitutionalPartnerships() {
   return (
-    <section className="relative overflow-hidden bg-[#f7f3eb] py-20 md:py-28 lg:py-32">
+    <section id="institutional-partnerships" className="relative overflow-hidden bg-[#f7f3eb] py-20 md:py-28 lg:py-32">
       {/* subtle texture */}
       <div className="absolute inset-0 opacity-[0.04] bg-[linear-gradient(to_right,#1f2937_1px,transparent_1px),linear-gradient(to_bottom,#1f2937_1px,transparent_1px)] bg-[size:72px_72px]" />
       <div className="absolute -left-24 top-0 h-80 w-80 rounded-full bg-emerald-900/5 blur-3xl" />

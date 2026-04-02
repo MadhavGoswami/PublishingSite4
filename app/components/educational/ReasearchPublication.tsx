@@ -32,7 +32,7 @@ const publications = [
 
 export default function ResearchPublications() {
   return (
-    <section className="relative overflow-hidden bg-[#f8f5ee] py-20 md:py-28 lg:py-32">
+    <section id="research-publications" className="relative overflow-hidden bg-[#f8f5ee] py-20 md:py-28 lg:py-32">
       {/* Background */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(36,70,61,0.07),transparent_26%),radial-gradient(circle_at_bottom_right,rgba(201,153,71,0.08),transparent_30%)]" />
       <div className="absolute inset-0 opacity-[0.04] bg-[linear-gradient(to_right,#1f2937_1px,transparent_1px),linear-gradient(to_bottom,#1f2937_1px,transparent_1px)] bg-[size:78px_78px]" />
