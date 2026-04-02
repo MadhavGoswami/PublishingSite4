@@ -8,7 +8,7 @@ const publications = [
     title: "Peer-Reviewed Journals",
     description:
       "Access rigorously reviewed journals featuring original research, scholarly discussion, and discipline-specific insights for higher education and academic excellence.",
-    image: "/research1.jpg",
+    image: "/peer.jpg",
     icon: FileText,
     tag: "Scholarly Access",
   },
@@ -16,7 +16,7 @@ const publications = [
     title: "Scientific Publications",
     description:
       "Explore research-led publications developed for universities, laboratories, and advanced learners, with a focus on methodology, innovation, and evidence-based knowledge.",
-    image: "/research2.jpg",
+    image: "/science.jpg",
     icon: Microscope,
     tag: "Research & Innovation",
   },
@@ -24,7 +24,7 @@ const publications = [
     title: "Academic Archives",
     description:
       "Discover conference papers, institutional research materials, and reference publications that strengthen learning, citation support, and long-term academic study.",
-    image: "/research3.jpg",
+    image: "/archi.jpg",
     icon: LibraryBig,
     tag: "Institutional Resources",
   },

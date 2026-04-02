@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import {
-  BookOpen,
   MonitorPlay,
   FileText,
   ArrowUpRight,
@@ -95,21 +94,94 @@ export default function EducationalResources() {
         <div className="grid gap-8 lg:grid-cols-[1.12fr_0.88fr]">
           {/* Featured large card */}
           <article className="overflow-hidden rounded-[2rem] border border-[#e8dfcf] bg-white shadow-[0_24px_70px_rgba(15,23,42,0.07)]">
-            <div className="grid md:grid-cols-[1.02fr_0.98fr]">
-              {/* Image */}
-              <div className="relative min-h-[320px] md:min-h-full">
-                <Image
-                  src="/resource-feature.jpg"
-                  alt="Educational resources for academic learning"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(15,23,42,0.35),transparent_45%)]" />
+            <div className="grid md:grid-cols-[0.9fr_1.1fr]">
+              {/* Collage Visual */}
+              <div className="relative min-h-[640px] overflow-hidden border-b border-[#eee4d5] bg-[#f7f2e8] md:min-h-full md:border-b-0 md:border-r">
+                {/* subtle background */}
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(36,70,61,0.06),transparent_30%),radial-gradient(circle_at_bottom,rgba(201,153,71,0.10),transparent_30%)]" />
 
-                <div className="absolute left-5 top-5">
-                  <span className="inline-flex rounded-full border border-white/30 bg-white/15 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.18em] text-white backdrop-blur-md">
+                {/* badge */}
+                <div className="absolute left-5 top-5 z-20">
+                  <span className="inline-flex rounded-full border border-white/40 bg-white/30 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.18em] text-[#24463d] backdrop-blur-md">
                     Featured Learning Collection
                   </span>
+                </div>
+
+                {/* vertical collage */}
+                <div className="relative z-10 flex h-full flex-col gap-4 p-5">
+                  {/* top card */}
+                  <div className="relative h-[34%] min-h-[190px] overflow-hidden rounded-[1.8rem] border border-white/80 bg-white p-2 shadow-[0_18px_40px_rgba(15,23,42,0.08)]">
+                    <div className="relative h-full w-full overflow-hidden rounded-[1.3rem]">
+                      <Image
+                        src="/digital.jpg"
+                        alt="Student using laptop for digital academic learning"
+                        fill
+                        className="object-cover"
+                      />
+                      <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(15,23,42,0.18),transparent_50%)]" />
+                    </div>
+
+                    <div className="absolute bottom-5 left-5 right-5">
+                      <div className="inline-flex rounded-full bg-white/85 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-[#2f7d6b] backdrop-blur-sm">
+                        Digital Learning
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* middle overlapping section */}
+                  <div className="grid flex-1 grid-cols-[1.05fr_0.95fr] gap-4">
+                    <div className="relative overflow-hidden rounded-[1.8rem] border border-white/80 bg-white p-2 shadow-[0_18px_40px_rgba(15,23,42,0.08)]">
+                      <div className="relative h-full min-h-[235px] w-full overflow-hidden rounded-[1.3rem]">
+                        <Image
+                          src="/notes.jpg"
+                          alt="Books, notes, and educational study materials"
+                          fill
+                          className="object-cover"
+                        />
+                        <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(15,23,42,0.14),transparent_55%)]" />
+                      </div>
+                    </div>
+
+                    <div className="flex flex-col gap-4">
+                      <div className="rounded-[1.6rem] border border-[#e7dcc9] bg-[#fffdf8] p-4 shadow-[0_14px_30px_rgba(15,23,42,0.05)]">
+                        <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#9a6b1f]">
+                          Resource Focus
+                        </p>
+                        <h4 className="mt-2 font-serif text-lg leading-snug text-[#24313d]">
+                          Structured support for study, revision, and classroom extension
+                        </h4>
+                      </div>
+
+                      <div className="relative flex-1 overflow-hidden rounded-[1.6rem] border border-white/80 bg-white p-2 shadow-[0_14px_30px_rgba(15,23,42,0.06)]">
+                        <div className="relative h-full min-h-[120px] w-full overflow-hidden rounded-[1.15rem]">
+                          <Image
+                            src="/student.jpg"
+                            alt="Students collaborating with academic learning resources"
+                            fill
+                            className="object-cover"
+                          />
+                          <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(15,23,42,0.16),transparent_55%)]" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* bottom strip */}
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="rounded-[1.4rem] border border-[#e7dcc9] bg-[#fffdf8] p-4 shadow-[0_12px_24px_rgba(15,23,42,0.04)]">
+                      <p className="font-serif text-2xl text-[#24313d]">Print + Digital</p>
+                      <p className="mt-1 text-xs leading-5 text-[#66707b]">
+                        flexible formats for institutions and independent learners
+                      </p>
+                    </div>
+
+                    <div className="rounded-[1.4rem] border border-[#e7dcc9] bg-[#fffdf8] p-4 shadow-[0_12px_24px_rgba(15,23,42,0.04)]">
+                      <p className="font-serif text-2xl text-[#24313d]">Multi-Format</p>
+                      <p className="mt-1 text-xs leading-5 text-[#66707b]">
+                        study guides, visual aids, references, and support tools
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
 

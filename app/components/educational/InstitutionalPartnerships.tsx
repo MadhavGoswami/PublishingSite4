@@ -170,7 +170,7 @@ export default function InstitutionalPartnerships() {
               <div className="relative overflow-hidden rounded-[2rem] border border-[#eadfcb] bg-white p-3 shadow-[0_26px_70px_rgba(15,23,42,0.10)]">
                 <div className="relative h-[320px] overflow-hidden rounded-[1.5rem] sm:h-[400px] md:h-[470px]">
                   <Image
-                    src="/partnership-main.jpg"
+                    src="/partner.png"
                     alt="Institutional partnership meeting"
                     fill
                     className="object-cover"
