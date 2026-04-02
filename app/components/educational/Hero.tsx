@@ -96,7 +96,7 @@ export default function Hero() {
               <div className="absolute right-0 top-0 h-[76%] w-[72%] rounded-[2rem] border border-white/70 bg-white p-3 shadow-[0_30px_80px_rgba(15,23,42,0.12)]">
                 <div className="relative h-full w-full overflow-hidden rounded-[1.5rem]">
                   <Image
-                    src="/image1.png"
+                    src="/Image1.png"
                     alt="Students and institutions using academic books"
                     fill
                     priority
@@ -110,7 +110,7 @@ export default function Hero() {
               <div className="absolute bottom-14 left-0 h-[40%] w-[41%] rounded-[1.6rem] border border-white/80 bg-white p-2.5 shadow-[0_24px_60px_rgba(15,23,42,0.12)]">
                 <div className="relative h-full w-full overflow-hidden rounded-[1.2rem]">
                   <Image
-                    src="/image2.png"
+                    src="/Image2.png"
                     alt="Academic learning materials and university study resources"
                     fill
                     className="object-cover"
