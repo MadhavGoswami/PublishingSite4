@@ -27,29 +27,34 @@ const miniResources = [
 
 export default function EducationalResources() {
   return (
-    <section id="ducational-resources" className="relative overflow-hidden bg-[#fbf8f2] py-20 md:py-28 lg:py-32">
+    <section
+      id="educational-resources"
+      className="relative overflow-hidden bg-[#fbf8f2] py-20 md:py-28 lg:py-32"
+    >
       {/* Background accents */}
       <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(to_right,#1f2937_1px,transparent_1px),linear-gradient(to_bottom,#1f2937_1px,transparent_1px)] bg-[size:82px_82px]" />
       <div className="absolute -left-16 top-12 h-72 w-72 rounded-full bg-emerald-900/5 blur-3xl" />
       <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-amber-400/10 blur-3xl" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(36,70,61,0.06),transparent_28%),radial-gradient(circle_at_bottom_right,rgba(201,153,71,0.08),transparent_30%)]" />
 
-      <div className="relative mx-auto max-w-7xl px-6 md:px-10">
-        {/* Heading */}
-        <div className="mx-auto mb-14 max-w-3xl text-center md:mb-16">
+      <div className="relative mx-auto max-w-7xl px-5 sm:px-6 md:px-10">
+        {/* SECTION 1: INTRO */}
+        <div className="mx-auto max-w-3xl text-center">
           <div className="inline-flex items-center gap-3 rounded-full border border-[#ddd2bf] bg-white/80 px-4 py-2 backdrop-blur-sm">
-            <span className="h-2 w-2 rounded-full bg-[#c99947]" />
+            <span className="h-2.5 w-2.5 rounded-full bg-[#c99947]" />
             <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[#2f7d6b] sm:text-xs">
               Educational Resources
             </p>
           </div>
 
-          <h2 className="mt-5 font-serif text-4xl leading-[1.02] tracking-[-0.03em] text-[#1f2937] sm:text-5xl md:text-6xl">
+          <h2 className="mt-6 font-serif text-[2.4rem] leading-[1.02] tracking-[-0.04em] text-[#1f2937] sm:text-5xl md:text-6xl">
             Enrich learning beyond
-            <span className="block text-[#24463d]">the traditional textbook</span>
+            <span className="mt-2 block text-[#24463d]">
+              the traditional textbook
+            </span>
           </h2>
 
-          <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-[#66707b] md:text-lg">
+          <p className="mx-auto mt-6 max-w-2xl text-[16px] leading-8 text-[#55616d] md:text-[17px]">
             Discover premium educational resources designed for students,
             educators, and institutions — supporting deeper understanding,
             classroom continuity, and more flexible academic learning across
@@ -57,59 +62,77 @@ export default function EducationalResources() {
           </p>
         </div>
 
-        {/* Premium audience strip */}
-        <div className="mb-10 grid gap-4 rounded-[2rem] border border-[#e7dcc9] bg-white/70 p-5 shadow-[0_12px_40px_rgba(15,23,42,0.05)] backdrop-blur-sm md:grid-cols-3 md:p-6">
-          <div className="rounded-[1.25rem] border border-[#efe6d7] bg-[#fcfaf6] p-4">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#9a6b1f]">
-              For Students
-            </p>
-            <p className="mt-2 text-sm leading-6 text-[#5f6874]">
-              Resources that support revision, concept clarity, independent
-              study, and better day-to-day academic confidence.
-            </p>
-          </div>
+        {/* SECTION 2: WHO THIS IS FOR */}
+        <div className="mt-16 md:mt-20">
+          <div className="mx-auto max-w-5xl">
+            <div className="mb-8 text-center">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#9a6b1f]">
+                Built for every academic context
+              </p>
+            </div>
 
-          <div className="rounded-[1.25rem] border border-[#efe6d7] bg-[#fcfaf6] p-4">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#9a6b1f]">
-              For Educators
-            </p>
-            <p className="mt-2 text-sm leading-6 text-[#5f6874]">
-              Teaching aids, companion materials, and supplementary content for
-              more engaging and structured classroom delivery.
-            </p>
-          </div>
+            <div className="grid gap-4 rounded-[2rem] border border-[#e7dcc9] bg-white/70 p-5 shadow-[0_12px_40px_rgba(15,23,42,0.05)] backdrop-blur-sm md:grid-cols-3 md:p-6">
+              <div className="rounded-[1.25rem] border border-[#efe6d7] bg-[#fcfaf6] p-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#9a6b1f]">
+                  For Students
+                </p>
+                <p className="mt-2 text-sm leading-6 text-[#5f6874]">
+                  Resources that support revision, concept clarity, independent
+                  study, and stronger day-to-day academic confidence.
+                </p>
+              </div>
 
-          <div className="rounded-[1.25rem] border border-[#efe6d7] bg-[#fcfaf6] p-4">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#9a6b1f]">
-              For Institutions
-            </p>
-            <p className="mt-2 text-sm leading-6 text-[#5f6874]">
-              Flexible academic support materials for libraries, blended
-              learning, curriculum enhancement, and institutional access.
-            </p>
+              <div className="rounded-[1.25rem] border border-[#efe6d7] bg-[#fcfaf6] p-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#9a6b1f]">
+                  For Educators
+                </p>
+                <p className="mt-2 text-sm leading-6 text-[#5f6874]">
+                  Teaching aids, companion materials, and supplementary content
+                  for more engaging and structured classroom delivery.
+                </p>
+              </div>
+
+              <div className="rounded-[1.25rem] border border-[#efe6d7] bg-[#fcfaf6] p-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#9a6b1f]">
+                  For Institutions
+                </p>
+                <p className="mt-2 text-sm leading-6 text-[#5f6874]">
+                  Flexible academic support materials for libraries, blended
+                  learning, curriculum enhancement, and institutional access.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
-        {/* Main editorial layout */}
-        <div className="grid gap-8 lg:grid-cols-[1.12fr_0.88fr]">
-          {/* Featured large card */}
+        {/* SECTION 3: FEATURED RESOURCE STORY */}
+        <div className="mt-16 md:mt-20">
+          <div className="mb-8 text-center md:mb-10">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#9a6b1f]">
+              Featured collection
+            </p>
+            <h3 className="mt-3 font-serif text-3xl leading-tight text-[#24313d] md:text-4xl">
+              Comprehensive learning materials for modern education
+            </h3>
+            <p className="mx-auto mt-4 max-w-2xl text-[15px] leading-7 text-[#66707b]">
+              A curated learning library designed to support study, revision,
+              classroom teaching, and flexible academic delivery across formats.
+            </p>
+          </div>
+
           <article className="overflow-hidden rounded-[2rem] border border-[#e8dfcf] bg-white shadow-[0_24px_70px_rgba(15,23,42,0.07)]">
-            <div className="grid md:grid-cols-[0.9fr_1.1fr]">
+            <div className="grid lg:grid-cols-[0.92fr_1.08fr]">
               {/* Collage Visual */}
-              <div className="relative min-h-[640px] overflow-hidden border-b border-[#eee4d5] bg-[#f7f2e8] md:min-h-full md:border-b-0 md:border-r">
-                {/* subtle background */}
+              <div className="relative min-h-[640px] overflow-hidden border-b border-[#eee4d5] bg-[#f7f2e8] lg:min-h-full lg:border-b-0 lg:border-r">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(36,70,61,0.06),transparent_30%),radial-gradient(circle_at_bottom,rgba(201,153,71,0.10),transparent_30%)]" />
 
-                {/* badge */}
                 <div className="absolute left-5 top-5 z-20">
                   <span className="inline-flex rounded-full border border-white/40 bg-white/30 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.18em] text-[#24463d] backdrop-blur-md">
                     Featured Learning Collection
                   </span>
                 </div>
 
-                {/* vertical collage */}
                 <div className="relative z-10 flex h-full flex-col gap-4 p-5">
-                  {/* top card */}
                   <div className="relative h-[34%] min-h-[190px] overflow-hidden rounded-[1.8rem] border border-white/80 bg-white p-2 shadow-[0_18px_40px_rgba(15,23,42,0.08)]">
                     <div className="relative h-full w-full overflow-hidden rounded-[1.3rem]">
                       <Image
@@ -128,7 +151,6 @@ export default function EducationalResources() {
                     </div>
                   </div>
 
-                  {/* middle overlapping section */}
                   <div className="grid flex-1 grid-cols-[1.05fr_0.95fr] gap-4">
                     <div className="relative overflow-hidden rounded-[1.8rem] border border-white/80 bg-white p-2 shadow-[0_18px_40px_rgba(15,23,42,0.08)]">
                       <div className="relative h-full min-h-[235px] w-full overflow-hidden rounded-[1.3rem]">
@@ -148,7 +170,8 @@ export default function EducationalResources() {
                           Resource Focus
                         </p>
                         <h4 className="mt-2 font-serif text-lg leading-snug text-[#24313d]">
-                          Structured support for study, revision, and classroom extension
+                          Structured support for study, revision, and classroom
+                          extension
                         </h4>
                       </div>
 
@@ -166,17 +189,20 @@ export default function EducationalResources() {
                     </div>
                   </div>
 
-                  {/* bottom strip */}
                   <div className="grid grid-cols-2 gap-4">
                     <div className="rounded-[1.4rem] border border-[#e7dcc9] bg-[#fffdf8] p-4 shadow-[0_12px_24px_rgba(15,23,42,0.04)]">
-                      <p className="font-serif text-2xl text-[#24313d]">Print + Digital</p>
+                      <p className="font-serif text-2xl text-[#24313d]">
+                        Print + Digital
+                      </p>
                       <p className="mt-1 text-xs leading-5 text-[#66707b]">
                         flexible formats for institutions and independent learners
                       </p>
                     </div>
 
                     <div className="rounded-[1.4rem] border border-[#e7dcc9] bg-[#fffdf8] p-4 shadow-[0_12px_24px_rgba(15,23,42,0.04)]">
-                      <p className="font-serif text-2xl text-[#24313d]">Multi-Format</p>
+                      <p className="font-serif text-2xl text-[#24313d]">
+                        Multi-Format
+                      </p>
                       <p className="mt-1 text-xs leading-5 text-[#66707b]">
                         study guides, visual aids, references, and support tools
                       </p>
@@ -193,14 +219,15 @@ export default function EducationalResources() {
                   </span>
 
                   <h3 className="mt-6 font-serif text-3xl leading-snug text-[#24313d] md:text-4xl">
-                    Comprehensive learning materials for modern education
+                    Designed to make learning more structured, accessible, and
+                    engaging
                   </h3>
 
                   <p className="mt-5 text-[15px] leading-8 text-[#66707b]">
                     Access study guides, companion content, visual learning
                     assets, academic references, and support materials designed
-                    to make learning more structured, accessible, and engaging
-                    for both independent learners and institutions.
+                    to strengthen learning for both independent learners and
+                    institutions.
                   </p>
 
                   <div className="mt-7 rounded-[1.5rem] border border-[#ece3d3] bg-[#fcfaf6] p-4">
@@ -233,9 +260,38 @@ export default function EducationalResources() {
               </div>
             </div>
           </article>
+        </div>
 
-          {/* Right stacked cards */}
-          <div className="flex flex-col gap-8">
+        {/* SECTION 4: SUPPORTING RESOURCE CARDS */}
+        <div className="mt-16 md:mt-20">
+          <div className="mb-8 text-center md:mb-10">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#9a6b1f]">
+              Additional resource formats
+            </p>
+            <h3 className="mt-3 font-serif text-3xl leading-tight text-[#24313d] md:text-4xl">
+              Supporting tools for flexible academic delivery
+            </h3>
+            <p className="mx-auto mt-4 max-w-2xl text-[15px] leading-7 text-[#66707b]">
+              Explore focused academic resources that help learners study more
+              effectively and help educators extend learning beyond the core text.
+            </p>
+          </div>
+
+          <div className="mx-auto mb-5 flex max-w-5xl items-center justify-between rounded-2xl border border-[#e3d8c5] bg-white/80 px-4 py-3 shadow-[0_10px_25px_rgba(15,23,42,0.04)] backdrop-blur-sm sm:px-5 lg:hidden">
+            <div>
+              <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#9a6b1f]">
+                Explore Resources
+              </p>
+              <p className="mt-1 text-sm leading-6 text-[#55616d]">
+                Tap any card below to discover more learning support tools.
+              </p>
+            </div>
+            <span className="ml-3 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#eef6f3] text-[#2f7d6b]">
+              <ArrowUpRight className="h-5 w-5" />
+            </span>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-2">
             {miniResources.map((item, index) => {
               const Icon = item.icon;
 
@@ -252,7 +308,7 @@ export default function EducationalResources() {
                       />
                     </div>
 
-                    <span className="flex h-11 w-11 items-center justify-center rounded-full bg-[#eef6f3] text-[#2f7d6b] transition duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
+                    <span className="flex h-11 w-11 items-center justify-center rounded-full border border-[#d9ecdf] bg-[#eef6f3] text-[#2f7d6b] transition duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
                       <ArrowUpRight className="h-5 w-5" />
                     </span>
                   </div>
@@ -261,46 +317,62 @@ export default function EducationalResources() {
                     {item.label}
                   </p>
 
-                  <h3 className="mt-3 font-serif text-2xl leading-snug text-[#24313d]">
+                  <h4 className="mt-3 font-serif text-2xl leading-snug text-[#24313d]">
                     {item.title}
-                  </h3>
+                  </h4>
 
                   <p className="mt-4 text-[15px] leading-7 text-[#66707b]">
                     {item.description}
                   </p>
 
-                  <button className="mt-6 inline-flex items-center text-sm font-semibold uppercase tracking-[0.18em] text-[#d39a33] transition group-hover:text-[#b57f20]">
-                    Learn More
-                  </button>
+                  <div className="mt-6 flex items-center justify-between">
+                    <button className="inline-flex items-center text-sm font-semibold uppercase tracking-[0.18em] text-[#d39a33] transition group-hover:text-[#b57f20]">
+                      Learn More
+                    </button>
+
+                    <span className="text-[11px] font-medium uppercase tracking-[0.16em] text-[#7b8794] sm:hidden">
+                      Tap
+                    </span>
+                  </div>
                 </article>
               );
             })}
           </div>
         </div>
 
-        {/* Bottom info strip */}
-        <div className="mt-10 grid gap-6 rounded-[2rem] border border-[#eadfcb] bg-[#fcfaf6] p-8 shadow-[0_18px_50px_rgba(40,40,40,0.04)] md:grid-cols-3">
-          <div>
-            <p className="font-serif text-4xl text-[#24313d]">200+</p>
-            <p className="mt-2 text-sm leading-6 text-[#66707b]">
-              curated educational resources across academic categories
+        {/* SECTION 5: PROOF / INFO STRIP */}
+        <div className="mt-16 md:mt-20">
+          <div className="mb-8 text-center">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#9a6b1f]">
+              Resource value at a glance
             </p>
           </div>
 
-          <div>
-            <p className="font-serif text-4xl text-[#24313d]">Print + Digital</p>
-            <p className="mt-2 text-sm leading-6 text-[#66707b]">
-              flexible access formats for classroom teaching, libraries, and
-              self-study use
-            </p>
-          </div>
+          <div className="grid gap-6 rounded-[2rem] border border-[#eadfcb] bg-[#fcfaf6] p-8 shadow-[0_18px_50px_rgba(40,40,40,0.04)] md:grid-cols-3">
+            <div>
+              <p className="font-serif text-4xl text-[#24313d]">200+</p>
+              <p className="mt-2 text-sm leading-6 text-[#66707b]">
+                curated educational resources across academic categories
+              </p>
+            </div>
 
-          <div>
-            <p className="font-serif text-4xl text-[#24313d]">Institution Ready</p>
-            <p className="mt-2 text-sm leading-6 text-[#66707b]">
-              aligned for academic delivery, learner support, and extended
-              educational engagement
-            </p>
+            <div>
+              <p className="font-serif text-4xl text-[#24313d]">Print + Digital</p>
+              <p className="mt-2 text-sm leading-6 text-[#66707b]">
+                flexible access formats for classroom teaching, libraries, and
+                self-study use
+              </p>
+            </div>
+
+            <div>
+              <p className="font-serif text-4xl text-[#24313d]">
+                Institution Ready
+              </p>
+              <p className="mt-2 text-sm leading-6 text-[#66707b]">
+                aligned for academic delivery, learner support, and extended
+                educational engagement
+              </p>
+            </div>
           </div>
         </div>
       </div>
