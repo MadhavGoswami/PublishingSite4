@@ -8,6 +8,7 @@ import {
   BookOpenCheck,
   LibraryBig,
   Handshake,
+  Sparkles,
 } from "lucide-react";
 
 const partnershipPoints = [
@@ -59,21 +60,21 @@ export default function InstitutionalPartnerships() {
       <div className="relative mx-auto max-w-7xl px-5 sm:px-6 md:px-10">
         {/* SECTION 1: INTRO */}
         <div className="mx-auto max-w-3xl text-center">
-          <div className="inline-flex items-center gap-3 rounded-full border border-[#ddd2bf] bg-white/85 px-4 py-2 backdrop-blur-sm">
+          <div className="inline-flex items-center gap-3 rounded-full border border-[#ddd2bf] bg-white/88 px-4 py-2 shadow-sm backdrop-blur-sm">
             <span className="h-2.5 w-2.5 rounded-full bg-[#c99947]" />
             <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[#2f7d6b] sm:text-xs">
               Institutional Partnerships
             </p>
           </div>
 
-          <h2 className="mt-6 font-serif text-[2.4rem] leading-[1.02] tracking-[-0.04em] text-[#1f2937] sm:text-5xl md:text-6xl">
+          <h2 className="mt-6 font-serif text-[2.4rem] leading-[1.02] tracking-[-0.04em] text-[#17212b] sm:text-5xl md:text-6xl">
             Academic partnerships
             <span className="mt-2 block text-[#24463d]">
               built for scale and impact
             </span>
           </h2>
 
-          <p className="mx-auto mt-6 max-w-2xl text-[16px] leading-8 text-[#55616d] md:text-[17px]">
+          <p className="mx-auto mt-6 max-w-2xl text-[16px] leading-8 text-[#4f5b67] md:text-[17px]">
             We work with schools, colleges, universities, libraries, and
             academic organisations to deliver premium publishing solutions that
             strengthen curriculum delivery, improve access, and support better
@@ -91,7 +92,7 @@ export default function InstitutionalPartnerships() {
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2">
-              <div className="rounded-[1.5rem] border border-[#e7dece] bg-white/90 p-6 shadow-[0_12px_35px_rgba(15,23,42,0.04)]">
+              <div className="rounded-[1.5rem] border border-[#e7dece] bg-white/92 p-6 shadow-[0_12px_35px_rgba(15,23,42,0.04)]">
                 <div className="flex items-start gap-4">
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#eef6f3]">
                     <GraduationCap className="h-5 w-5 text-[#2f7d6b]" />
@@ -108,7 +109,7 @@ export default function InstitutionalPartnerships() {
                 </div>
               </div>
 
-              <div className="rounded-[1.5rem] border border-[#e7dece] bg-white/90 p-6 shadow-[0_12px_35px_rgba(15,23,42,0.04)]">
+              <div className="rounded-[1.5rem] border border-[#e7dece] bg-white/92 p-6 shadow-[0_12px_35px_rgba(15,23,42,0.04)]">
                 <div className="flex items-start gap-4">
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#eef6f3]">
                     <Building2 className="h-5 w-5 text-[#2f7d6b]" />
@@ -134,16 +135,16 @@ export default function InstitutionalPartnerships() {
             <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#9a6b1f]">
               Partnership models
             </p>
-            <h3 className="mt-3 font-serif text-3xl leading-tight text-[#24313d] md:text-4xl">
+            <h3 className="mt-3 font-serif text-3xl leading-tight text-[#1f2a35] md:text-4xl">
               Flexible publishing support for modern academic needs
             </h3>
-            <p className="mx-auto mt-4 max-w-2xl text-[15px] leading-7 text-[#66707b]">
+            <p className="mx-auto mt-4 max-w-2xl text-[15px] leading-7 text-[#55616d]">
               Explore the core ways we help institutions strengthen academic
               delivery, improve access, and build long-term learning value.
             </p>
           </div>
 
-          <div className="mx-auto mb-5 flex max-w-5xl items-center justify-between rounded-2xl border border-[#e3d8c5] bg-white/80 px-4 py-3 shadow-[0_10px_25px_rgba(15,23,42,0.04)] backdrop-blur-sm sm:px-5 lg:hidden">
+          <div className="mx-auto mb-5 flex max-w-5xl items-center justify-between rounded-2xl border border-[#e3d8c5] bg-white/85 px-4 py-3 shadow-[0_10px_25px_rgba(15,23,42,0.04)] backdrop-blur-sm sm:px-5 lg:hidden">
             <div>
               <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#9a6b1f]">
                 Explore Partnerships
@@ -152,7 +153,7 @@ export default function InstitutionalPartnerships() {
                 Tap any card below to discover partnership opportunities.
               </p>
             </div>
-            <span className="ml-3 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#eef6f3] text-[#2f7d6b]">
+            <span className="ml-3 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#d9ecdf] bg-[#eef6f3] text-[#2f7d6b]">
               <ArrowUpRight className="h-5 w-5" />
             </span>
           </div>
@@ -164,10 +165,10 @@ export default function InstitutionalPartnerships() {
               return (
                 <article
                   key={index}
-                  className="group rounded-[1.8rem] border border-[#e9dfcf] bg-white/95 p-6 shadow-[0_18px_50px_rgba(15,23,42,0.05)] backdrop-blur-sm transition duration-300 hover:-translate-y-2 hover:shadow-[0_24px_60px_rgba(15,23,42,0.08)]"
+                  className="group rounded-[1.8rem] border border-[#e9dfcf] bg-white/96 p-6 shadow-[0_18px_50px_rgba(15,23,42,0.05)] backdrop-blur-sm transition duration-300 hover:-translate-y-2 hover:shadow-[0_24px_60px_rgba(15,23,42,0.08)]"
                 >
                   <div className="flex items-start justify-between gap-4">
-                    <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#f8f3e8]">
+                    <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#f8f3e8] shadow-sm">
                       <Icon
                         className="h-7 w-7 text-[#c98d2c]"
                         strokeWidth={1.8}
@@ -179,21 +180,22 @@ export default function InstitutionalPartnerships() {
                     </span>
                   </div>
 
-                  <h4 className="mt-6 font-serif text-2xl leading-snug text-[#24313d]">
+                  <h4 className="mt-6 font-serif text-2xl leading-snug text-[#1f2a35]">
                     {item.title}
                   </h4>
 
-                  <p className="mt-4 text-[15px] leading-7 text-[#66707b]">
+                  <p className="mt-4 text-[15px] leading-7 text-[#55616d]">
                     {item.description}
                   </p>
 
-                  <div className="mt-6 flex items-center justify-between">
+                  <div className="mt-6 flex items-center justify-between border-t border-[#eee5d8] pt-5">
                     <button className="inline-flex items-center text-sm font-semibold uppercase tracking-[0.16em] text-[#c78c28] transition group-hover:text-[#a87115]">
                       View Details
                     </button>
 
-                    <span className="text-[11px] font-medium uppercase tracking-[0.16em] text-[#7b8794] sm:hidden">
+                    <span className="inline-flex items-center gap-2 text-[11px] font-medium uppercase tracking-[0.16em] text-[#7b8794] sm:hidden">
                       Tap
+                      <ArrowUpRight className="h-3.5 w-3.5" />
                     </span>
                   </div>
                 </article>
@@ -206,15 +208,18 @@ export default function InstitutionalPartnerships() {
         <div className="mt-16 md:mt-20">
           <div className="grid items-center gap-8 lg:grid-cols-[1.02fr_0.98fr] lg:gap-12">
             <div className="order-2 lg:order-1">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#9a6b1f]">
-                Strategic collaboration
-              </p>
+              <div className="inline-flex items-center gap-2">
+                <Sparkles className="h-4 w-4 text-[#c99947]" />
+                <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#9a6b1f]">
+                  Strategic collaboration
+                </p>
+              </div>
 
-              <h3 className="mt-4 font-serif text-3xl leading-tight text-[#1f2937] md:text-4xl">
+              <h3 className="mt-4 font-serif text-3xl leading-tight text-[#1f2a35] md:text-4xl">
                 Built to support both student learning and institutional growth
               </h3>
 
-              <p className="mt-5 max-w-2xl text-[15px] leading-7 text-[#66707b]">
+              <p className="mt-5 max-w-2xl text-[15px] leading-7 text-[#55616d]">
                 From tailored academic titles to large-scale institutional
                 delivery, our partnerships are designed to support faculty,
                 strengthen access, and create long-term value across academic
@@ -222,23 +227,34 @@ export default function InstitutionalPartnerships() {
               </p>
 
               <div className="mt-6 flex flex-wrap gap-3">
-                <span className="rounded-full bg-[#eef6f3] px-3 py-1 text-xs font-medium text-[#2f7d6b]">
+                <span className="rounded-full bg-[#eef6f3] px-3 py-1.5 text-xs font-medium text-[#2f7d6b]">
                   Custom Editions
                 </span>
-                <span className="rounded-full bg-[#fff7ea] px-3 py-1 text-xs font-medium text-[#b07b24]">
+                <span className="rounded-full bg-[#fff7ea] px-3 py-1.5 text-xs font-medium text-[#b07b24]">
                   Bulk Access
                 </span>
-                <span className="rounded-full bg-[#f3f4f6] px-3 py-1 text-xs font-medium text-[#475569]">
+                <span className="rounded-full bg-[#f3f4f6] px-3 py-1.5 text-xs font-medium text-[#475569]">
                   Faculty Support
                 </span>
               </div>
 
+              <div className="mt-6 rounded-[1.35rem] border border-[#e6dac7] bg-white/82 p-4 shadow-sm backdrop-blur-sm lg:hidden">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#9a6b1f]">
+                  Explore the partnership
+                </p>
+                <p className="mt-1 text-sm leading-6 text-[#55616d]">
+                  Use the buttons below to review partnership models or begin an
+                  institutional collaboration.
+                </p>
+              </div>
+
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                <button className="rounded-full bg-[#2f7d6b] px-7 py-3.5 text-sm font-semibold text-white shadow-[0_14px_34px_rgba(47,125,107,0.18)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#256757]">
+                <button className="inline-flex items-center justify-center gap-2 rounded-full bg-[#2f7d6b] px-7 py-3.5 text-sm font-semibold text-white shadow-[0_14px_34px_rgba(47,125,107,0.18)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#256757]">
                   Partner With Us
+                  <ArrowUpRight className="h-4 w-4" />
                 </button>
 
-                <button className="rounded-full border border-[#d8c9ab] bg-white/90 px-7 py-3.5 text-sm font-semibold text-[#334155] transition duration-300 hover:border-[#c1943e] hover:bg-white">
+                <button className="rounded-full border border-[#d8c9ab] bg-white/92 px-7 py-3.5 text-sm font-semibold text-[#334155] transition duration-300 hover:border-[#c1943e] hover:bg-white">
                   View Partnership Models
                 </button>
               </div>
@@ -254,10 +270,10 @@ export default function InstitutionalPartnerships() {
                       fill
                       className="object-cover"
                     />
-                    <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(15,23,42,0.35),transparent_45%)]" />
+                    <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(15,23,42,0.42),rgba(15,23,42,0.12),transparent_48%)]" />
 
                     <div className="absolute left-5 top-5">
-                      <span className="inline-flex rounded-full border border-white/30 bg-white/15 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.18em] text-white backdrop-blur-md">
+                      <span className="inline-flex rounded-full border border-white/35 bg-white/18 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.18em] text-white backdrop-blur-md">
                         Strategic Collaboration
                       </span>
                     </div>
@@ -282,24 +298,27 @@ export default function InstitutionalPartnerships() {
         {/* SECTION 5: STATS / PROOF */}
         <div className="mt-16 md:mt-20">
           <div className="mb-8 text-center">
-            <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#9a6b1f]">
-              Partnership at a glance
-            </p>
+            <div className="inline-flex items-center gap-2">
+              <Sparkles className="h-4 w-4 text-[#c99947]" />
+              <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#9a6b1f]">
+                Partnership at a glance
+              </p>
+            </div>
           </div>
 
           <div className="relative overflow-hidden rounded-[2rem] border border-[#e7dcc8] bg-[#f0e2b9] px-6 py-12 shadow-[0_18px_50px_rgba(15,23,42,0.05)] md:px-10">
             <div className="absolute inset-0 opacity-[0.18] bg-[radial-gradient(circle_at_left,#d8b869_0,transparent_30%),radial-gradient(circle_at_right,#d8b869_0,transparent_28%)]" />
 
-            <div className="relative grid gap-8 sm:grid-cols-2 xl:grid-cols-4">
+            <div className="relative grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
               {stats.map((item, index) => (
                 <div
                   key={index}
-                  className="rounded-[1.4rem] border border-white/30 bg-white/20 px-5 py-6 text-center backdrop-blur-sm"
+                  className="rounded-[1.4rem] border border-white/30 bg-white/24 px-5 py-6 text-center backdrop-blur-sm"
                 >
-                  <p className="font-serif text-5xl text-[#34414d] md:text-6xl">
+                  <p className="font-serif text-5xl text-[#2b3742] md:text-6xl">
                     {item.number}
                   </p>
-                  <p className="mt-3 text-base text-[#4b5563]">{item.label}</p>
+                  <p className="mt-3 text-base text-[#495664]">{item.label}</p>
                 </div>
               ))}
             </div>

@@ -64,14 +64,14 @@ export default function TeacherResources() {
       <div className="relative mx-auto max-w-7xl px-5 sm:px-6 md:px-10">
         {/* SECTION 1: INTRO / HERO PART */}
         <div className="mx-auto max-w-3xl text-center">
-          <div className="inline-flex items-center gap-3 rounded-full border border-[#ddd2bf] bg-white/85 px-4 py-2 shadow-sm backdrop-blur-sm">
+          <div className="inline-flex items-center gap-3 rounded-full border border-[#ddd2bf] bg-white/88 px-4 py-2 shadow-sm backdrop-blur-sm">
             <span className="h-2.5 w-2.5 rounded-full bg-[#c99947]" />
             <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[#2f7d6b] sm:text-xs">
               Teacher Resources
             </p>
           </div>
 
-          <h2 className="mt-6 font-serif text-[2.4rem] leading-[1.02] tracking-[-0.04em] text-[#17202a] sm:text-5xl md:text-6xl">
+          <h2 className="mt-6 font-serif text-[2.4rem] leading-[1.02] tracking-[-0.04em] text-[#17212b] sm:text-5xl md:text-6xl">
             Premium teaching tools
             <span className="mt-2 block text-[#24463d]">
               for educators and institutions
@@ -85,13 +85,25 @@ export default function TeacherResources() {
           </p>
 
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <button className="rounded-full bg-[#2f7d6b] px-7 py-3.5 text-sm font-semibold text-white shadow-[0_14px_34px_rgba(47,125,107,0.18)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#256757]">
+            <button className="inline-flex items-center justify-center gap-2 rounded-full bg-[#2f7d6b] px-7 py-3.5 text-sm font-semibold text-white shadow-[0_14px_34px_rgba(47,125,107,0.18)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#256757]">
               Explore Teacher Resources
+              <ArrowUpRight className="h-4 w-4" />
             </button>
 
-            <button className="rounded-full border border-[#d8c9ab] bg-white/90 px-7 py-3.5 text-sm font-semibold text-[#24313d] transition duration-300 hover:border-[#c1943e] hover:bg-white">
+            <button className="rounded-full border border-[#d8c9ab] bg-white/92 px-7 py-3.5 text-sm font-semibold text-[#24313d] transition duration-300 hover:border-[#c1943e] hover:bg-white">
               Download Faculty Guide
             </button>
+          </div>
+
+          {/* Mobile/tablet interaction hint */}
+          <div className="mx-auto mt-6 max-w-2xl rounded-[1.4rem] border border-[#e5d9c7] bg-white/82 p-4 shadow-sm backdrop-blur-sm lg:hidden">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#9a6b1f]">
+              Explore the collection
+            </p>
+            <p className="mt-2 text-sm leading-6 text-[#55616d]">
+              Browse teaching tools, review support options, and tap the cards
+              below to discover faculty-ready resources.
+            </p>
           </div>
         </div>
 
@@ -99,14 +111,17 @@ export default function TeacherResources() {
         <div className="mt-16 md:mt-20">
           <div className="mx-auto max-w-5xl">
             <div className="mb-8 text-center">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#9a6b1f]">
-                Built for your academic environment
-              </p>
+              <div className="inline-flex items-center gap-2">
+                <Sparkles className="h-4 w-4 text-[#c99947]" />
+                <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#9a6b1f]">
+                  Built for your academic environment
+                </p>
+              </div>
             </div>
 
             <div className="grid gap-5 lg:grid-cols-[1.2fr_0.8fr]">
               <div className="grid gap-4 sm:grid-cols-2">
-                <div className="rounded-[1.5rem] border border-[#e7dece] bg-white/90 p-6 shadow-[0_12px_35px_rgba(15,23,42,0.04)]">
+                <div className="rounded-[1.5rem] border border-[#e7dece] bg-white/92 p-6 shadow-[0_12px_35px_rgba(15,23,42,0.04)]">
                   <div className="flex items-start gap-4">
                     <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#eef6f3]">
                       <Users className="h-5 w-5 text-[#2f7d6b]" />
@@ -123,7 +138,7 @@ export default function TeacherResources() {
                   </div>
                 </div>
 
-                <div className="rounded-[1.5rem] border border-[#e7dece] bg-white/90 p-6 shadow-[0_12px_35px_rgba(15,23,42,0.04)]">
+                <div className="rounded-[1.5rem] border border-[#e7dece] bg-white/92 p-6 shadow-[0_12px_35px_rgba(15,23,42,0.04)]">
                   <div className="flex items-start gap-4">
                     <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#eef6f3]">
                       <Building2 className="h-5 w-5 text-[#2f7d6b]" />
@@ -133,8 +148,8 @@ export default function TeacherResources() {
                         For Institutions
                       </p>
                       <p className="mt-2 text-sm leading-6 text-[#55616d]">
-                        Faculty-ready academic materials that improve consistency,
-                        quality, and support across departments.
+                        Faculty-ready academic materials that improve
+                        consistency, quality, and support across departments.
                       </p>
                     </div>
                   </div>
@@ -143,14 +158,14 @@ export default function TeacherResources() {
 
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
                 <div className="rounded-[1.5rem] border border-[#e7dece] bg-[#fcfaf6] p-6 shadow-[0_12px_35px_rgba(15,23,42,0.04)]">
-                  <p className="font-serif text-3xl text-[#1c2732]">120+</p>
+                  <p className="font-serif text-3xl text-[#1b2430]">120+</p>
                   <p className="mt-2 text-sm leading-6 text-[#55616d]">
                     teaching support resources
                   </p>
                 </div>
 
                 <div className="rounded-[1.5rem] border border-[#e7dece] bg-[#fcfaf6] p-6 shadow-[0_12px_35px_rgba(15,23,42,0.04)]">
-                  <p className="font-serif text-3xl text-[#1c2732]">35+</p>
+                  <p className="font-serif text-3xl text-[#1b2430]">35+</p>
                   <p className="mt-2 text-sm leading-6 text-[#55616d]">
                     subject-ready educator kits
                   </p>
@@ -162,7 +177,7 @@ export default function TeacherResources() {
 
         {/* SECTION 3: WHY IT MATTERS */}
         <div className="mt-16 md:mt-20">
-          <div className="mx-auto max-w-4xl rounded-[2rem] border border-[#e8dcc8] bg-white/80 p-6 shadow-[0_14px_40px_rgba(15,23,42,0.04)] sm:p-8 md:p-10">
+          <div className="mx-auto max-w-4xl rounded-[2rem] border border-[#e8dcc8] bg-white/82 p-6 shadow-[0_14px_40px_rgba(15,23,42,0.04)] sm:p-8 md:p-10">
             <div className="text-center">
               <div className="inline-flex items-center gap-2">
                 <Sparkles className="h-4 w-4 text-[#c99947]" />
@@ -209,12 +224,13 @@ export default function TeacherResources() {
             </h3>
             <p className="mx-auto mt-4 max-w-2xl text-[15px] leading-7 text-[#55616d]">
               Browse structured resources developed to support lesson planning,
-              instructional delivery, faculty development, and classroom clarity.
+              instructional delivery, faculty development, and classroom
+              clarity.
             </p>
           </div>
 
           {/* Mobile/tablet interaction cue */}
-          <div className="mx-auto mb-5 flex max-w-5xl items-center justify-between rounded-2xl border border-[#e3d8c5] bg-white/80 px-4 py-3 shadow-[0_10px_25px_rgba(15,23,42,0.04)] backdrop-blur-sm sm:px-5 lg:hidden">
+          <div className="mx-auto mb-5 flex max-w-5xl items-center justify-between rounded-2xl border border-[#e3d8c5] bg-white/85 px-4 py-3 shadow-[0_10px_25px_rgba(15,23,42,0.04)] backdrop-blur-sm sm:px-5 lg:hidden">
             <div>
               <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#9a6b1f]">
                 Discover Resources
@@ -223,7 +239,7 @@ export default function TeacherResources() {
                 Tap any card below to explore available teaching support tools.
               </p>
             </div>
-            <span className="ml-3 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#eef6f3] text-[#2f7d6b]">
+            <span className="ml-3 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#d9ecdf] bg-[#eef6f3] text-[#2f7d6b]">
               <ArrowUpRight className="h-5 w-5" />
             </span>
           </div>
@@ -235,7 +251,7 @@ export default function TeacherResources() {
               return (
                 <article
                   key={index}
-                  className="group relative rounded-[1.8rem] border border-[#e9dfcf] bg-white/95 p-6 shadow-[0_18px_50px_rgba(15,23,42,0.05)] backdrop-blur-sm transition duration-300 hover:-translate-y-2 hover:shadow-[0_24px_60px_rgba(15,23,42,0.08)]"
+                  className="group relative rounded-[1.8rem] border border-[#e9dfcf] bg-white/96 p-6 shadow-[0_18px_50px_rgba(15,23,42,0.05)] backdrop-blur-sm transition duration-300 hover:-translate-y-2 hover:shadow-[0_24px_60px_rgba(15,23,42,0.08)]"
                 >
                   <div className="absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-[#d7b06b] to-transparent opacity-70" />
 
@@ -264,13 +280,14 @@ export default function TeacherResources() {
                     {item.description}
                   </p>
 
-                  <div className="mt-6 flex items-center justify-between">
+                  <div className="mt-6 flex items-center justify-between border-t border-[#eee5d8] pt-5">
                     <button className="inline-flex items-center text-sm font-semibold uppercase tracking-[0.16em] text-[#c78c28] transition group-hover:text-[#a87115]">
                       View Details
                     </button>
 
-                    <span className="text-[11px] font-medium uppercase tracking-[0.16em] text-[#7b8794] sm:hidden">
+                    <span className="inline-flex items-center gap-2 text-[11px] font-medium uppercase tracking-[0.16em] text-[#7b8794] sm:hidden">
                       Tap
+                      <ArrowUpRight className="h-3.5 w-3.5" />
                     </span>
                   </div>
                 </article>

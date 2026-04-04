@@ -1,7 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import { ArrowRight, FileText, Microscope, LibraryBig } from "lucide-react";
+import {
+  ArrowRight,
+  ArrowUpRight,
+  FileText,
+  Microscope,
+  LibraryBig,
+  Sparkles,
+} from "lucide-react";
 
 const publications = [
   {
@@ -52,21 +59,21 @@ export default function ResearchPublications() {
       <div className="relative mx-auto max-w-7xl px-5 sm:px-6 md:px-10">
         {/* SECTION 1: INTRO */}
         <div className="mx-auto max-w-3xl text-center">
-          <div className="inline-flex items-center gap-3 rounded-full border border-[#ddd2bf] bg-white/85 px-4 py-2 backdrop-blur-sm">
+          <div className="inline-flex items-center gap-3 rounded-full border border-[#ddd2bf] bg-white/88 px-4 py-2 shadow-sm backdrop-blur-sm">
             <span className="h-2.5 w-2.5 rounded-full bg-[#c99947]" />
             <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[#2f7d6b] sm:text-xs">
               Research Publications
             </p>
           </div>
 
-          <h2 className="mt-6 font-serif text-[2.4rem] leading-[1.02] tracking-[-0.04em] text-[#1f2937] sm:text-5xl md:text-6xl">
+          <h2 className="mt-6 font-serif text-[2.4rem] leading-[1.02] tracking-[-0.04em] text-[#17212b] sm:text-5xl md:text-6xl">
             Trusted research resources
             <span className="mt-2 block text-[#24463d]">
               for students and institutions
             </span>
           </h2>
 
-          <p className="mx-auto mt-6 max-w-2xl text-[16px] leading-8 text-[#55616d] md:text-[17px]">
+          <p className="mx-auto mt-6 max-w-2xl text-[16px] leading-8 text-[#4f5b67] md:text-[17px]">
             Support deeper learning, academic discovery, and institutional
             excellence with a refined collection of journals, scientific
             publications, and archival resources curated for modern education.
@@ -77,12 +84,15 @@ export default function ResearchPublications() {
         <div className="mt-16 md:mt-20">
           <div className="mx-auto max-w-5xl">
             <div className="mb-8 text-center">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#9a6b1f]">
-                Built for every academic layer
-              </p>
+              <div className="inline-flex items-center gap-2">
+                <Sparkles className="h-4 w-4 text-[#c99947]" />
+                <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#9a6b1f]">
+                  Built for every academic layer
+                </p>
+              </div>
             </div>
 
-            <div className="grid gap-4 rounded-[2rem] border border-[#e7dcc9] bg-white/75 p-5 shadow-[0_12px_40px_rgba(15,23,42,0.05)] backdrop-blur-sm md:grid-cols-3 md:p-6">
+            <div className="grid gap-4 rounded-[2rem] border border-[#e7dcc9] bg-white/78 p-5 shadow-[0_12px_40px_rgba(15,23,42,0.05)] backdrop-blur-sm md:grid-cols-3 md:p-6">
               <div className="rounded-[1.25rem] border border-[#efe6d7] bg-[#fcfaf6] p-5">
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#9a6b1f]">
                   For Students
@@ -123,7 +133,7 @@ export default function ResearchPublications() {
             <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#9a6b1f]">
               Explore publication types
             </p>
-            <h3 className="mt-3 font-serif text-3xl leading-tight text-[#1f2937] md:text-4xl">
+            <h3 className="mt-3 font-serif text-3xl leading-tight text-[#1f2a35] md:text-4xl">
               Research collections built for serious academic use
             </h3>
             <p className="mx-auto mt-4 max-w-2xl text-[15px] leading-7 text-[#55616d]">
@@ -133,6 +143,22 @@ export default function ResearchPublications() {
             </p>
           </div>
 
+          {/* Mobile/tablet interaction cue */}
+          <div className="mx-auto mb-5 flex max-w-5xl items-center justify-between rounded-2xl border border-[#e3d8c5] bg-white/85 px-4 py-3 shadow-[0_10px_25px_rgba(15,23,42,0.04)] backdrop-blur-sm sm:px-5 xl:hidden">
+            <div>
+              <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#9a6b1f]">
+                Explore Publications
+              </p>
+              <p className="mt-1 text-sm leading-6 text-[#55616d]">
+                Tap any card below to browse publication categories and discover
+                research collections.
+              </p>
+            </div>
+            <span className="ml-3 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#d9ecdf] bg-[#eef6f3] text-[#2f7d6b]">
+              <ArrowUpRight className="h-5 w-5" />
+            </span>
+          </div>
+
           <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
             {publications.map((item, index) => {
               const Icon = item.icon;
@@ -140,7 +166,7 @@ export default function ResearchPublications() {
               return (
                 <article
                   key={index}
-                  className="group relative overflow-hidden rounded-[2rem] border border-[#eadfce] bg-white/92 shadow-[0_20px_60px_rgba(15,23,42,0.07)] transition duration-500 hover:-translate-y-2 hover:shadow-[0_28px_80px_rgba(15,23,42,0.1)]"
+                  className="group relative overflow-hidden rounded-[2rem] border border-[#eadfce] bg-white/95 shadow-[0_20px_60px_rgba(15,23,42,0.07)] transition duration-500 hover:-translate-y-2 hover:shadow-[0_28px_80px_rgba(15,23,42,0.1)]"
                 >
                   <div className="relative h-72 overflow-hidden">
                     <Image
@@ -149,10 +175,10 @@ export default function ResearchPublications() {
                       fill
                       className="object-cover transition duration-700 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(15,23,42,0.7),rgba(15,23,42,0.18),transparent)]" />
+                    <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(15,23,42,0.78),rgba(15,23,42,0.22),transparent)]" />
 
                     <div className="absolute left-5 top-5">
-                      <span className="inline-flex rounded-full border border-white/25 bg-white/15 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.18em] text-white backdrop-blur-md">
+                      <span className="inline-flex rounded-full border border-white/30 bg-white/18 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.18em] text-white backdrop-blur-md">
                         {item.tag}
                       </span>
                     </div>
@@ -160,12 +186,15 @@ export default function ResearchPublications() {
 
                   <div className="relative z-10 -mt-10 px-6">
                     <div className="flex h-20 w-20 items-center justify-center rounded-[1.5rem] border border-[#f1e6d4] bg-[#fffdf9] shadow-[0_12px_34px_rgba(15,23,42,0.08)]">
-                      <Icon className="h-8 w-8 text-[#c99947]" strokeWidth={1.7} />
+                      <Icon
+                        className="h-8 w-8 text-[#c99947]"
+                        strokeWidth={1.7}
+                      />
                     </div>
                   </div>
 
                   <div className="px-6 pb-8 pt-5 md:px-8 md:pb-10">
-                    <h4 className="font-serif text-2xl leading-tight text-[#24463d] md:text-[2rem]">
+                    <h4 className="font-serif text-2xl leading-tight text-[#1f2a35] md:text-[2rem]">
                       {item.title}
                     </h4>
 
@@ -174,7 +203,7 @@ export default function ResearchPublications() {
                     </p>
 
                     <div className="mt-6 flex items-center justify-between border-t border-[#eee5d8] pt-5">
-                      <p className="text-sm font-medium text-[#73808c]">
+                      <p className="text-sm font-medium text-[#667481]">
                         Academic access
                       </p>
 
@@ -192,13 +221,13 @@ export default function ResearchPublications() {
 
         {/* SECTION 4: CTA / INSTITUTIONAL ACCESS */}
         <div className="mt-16 md:mt-20">
-          <div className="rounded-[2rem] border border-[#e7dcc9] bg-white/78 p-6 shadow-[0_18px_50px_rgba(15,23,42,0.05)] backdrop-blur-sm md:p-8">
+          <div className="rounded-[2rem] border border-[#e7dcc9] bg-white/82 p-6 shadow-[0_18px_50px_rgba(15,23,42,0.05)] backdrop-blur-sm md:p-8">
             <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
               <div className="max-w-2xl">
                 <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#9a6b1f]">
                   Institutional Research Access
                 </p>
-                <h3 className="mt-3 font-serif text-3xl leading-tight text-[#1f2937] md:text-4xl">
+                <h3 className="mt-3 font-serif text-3xl leading-tight text-[#1f2a35] md:text-4xl">
                   Strengthen academic learning with credible publications
                 </h3>
                 <p className="mt-4 text-[15px] leading-8 text-[#55616d] md:text-base">
@@ -209,8 +238,9 @@ export default function ResearchPublications() {
               </div>
 
               <div className="flex flex-col gap-4 sm:flex-row">
-                <button className="rounded-full bg-[#2f7d6b] px-8 py-4 text-sm font-semibold text-white shadow-[0_14px_34px_rgba(47,125,107,0.18)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#256757]">
+                <button className="inline-flex items-center justify-center gap-2 rounded-full bg-[#2f7d6b] px-8 py-4 text-sm font-semibold text-white shadow-[0_14px_34px_rgba(47,125,107,0.18)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#256757]">
                   View All Publications
+                  <ArrowRight className="h-4 w-4" />
                 </button>
 
                 <button className="rounded-full border border-[#d7c8ab] bg-[#fffdf9] px-8 py-4 text-sm font-semibold text-[#334155] transition duration-300 hover:border-[#c99947] hover:bg-white">

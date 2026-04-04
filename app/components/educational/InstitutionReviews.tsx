@@ -7,6 +7,8 @@ import {
   Quote,
   Building2,
   GraduationCap,
+  Sparkles,
+  ArrowUpRight,
 } from "lucide-react";
 
 const reviews = [
@@ -80,21 +82,21 @@ export default function InstitutionReviews() {
       <div className="relative mx-auto max-w-7xl px-5 sm:px-6 md:px-10">
         {/* SECTION 1: INTRO */}
         <div className="mx-auto max-w-3xl text-center">
-          <div className="inline-flex items-center gap-3 rounded-full border border-[#ddd2bf] bg-white/80 px-4 py-2 backdrop-blur-sm">
+          <div className="inline-flex items-center gap-3 rounded-full border border-[#ddd2bf] bg-white/85 px-4 py-2 shadow-sm backdrop-blur-sm">
             <span className="h-2.5 w-2.5 rounded-full bg-[#c99947]" />
             <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[#2f7d6b] sm:text-xs">
               Institutional Reviews
             </p>
           </div>
 
-          <h2 className="mt-6 font-serif text-[2.4rem] leading-[1.02] tracking-[-0.04em] text-[#1f2937] sm:text-5xl md:text-6xl">
+          <h2 className="mt-6 font-serif text-[2.4rem] leading-[1.02] tracking-[-0.04em] text-[#17212b] sm:text-5xl md:text-6xl">
             Trusted by academic
             <span className="mt-2 block text-[#24463d]">
               leaders and institutions
             </span>
           </h2>
 
-          <p className="mx-auto mt-6 max-w-2xl text-[16px] leading-8 text-[#55616d] md:text-[17px]">
+          <p className="mx-auto mt-6 max-w-2xl text-[16px] leading-8 text-[#4f5b67] md:text-[17px]">
             Feedback from universities, colleges, schools, and academic
             decision-makers who have partnered with us to strengthen publishing
             quality, curriculum support, and student learning outcomes.
@@ -105,12 +107,15 @@ export default function InstitutionReviews() {
         <div className="mt-16 md:mt-20">
           <div className="mx-auto max-w-5xl">
             <div className="mb-8 text-center">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#9a6b1f]">
-                Why institutions trust the partnership
-              </p>
+              <div className="inline-flex items-center gap-2">
+                <Sparkles className="h-4 w-4 text-[#c99947]" />
+                <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#9a6b1f]">
+                  Why institutions trust the partnership
+                </p>
+              </div>
             </div>
 
-            <div className="grid gap-4 rounded-[2rem] border border-[#e7dcc9] bg-white/70 p-5 shadow-[0_12px_40px_rgba(15,23,42,0.05)] backdrop-blur-sm md:grid-cols-3 md:p-6">
+            <div className="grid gap-4 rounded-[2rem] border border-[#e7dcc9] bg-white/75 p-5 shadow-[0_12px_40px_rgba(15,23,42,0.05)] backdrop-blur-sm md:grid-cols-3 md:p-6">
               {trustPoints.map((item, index) => {
                 const Icon = item.icon;
 
@@ -127,7 +132,7 @@ export default function InstitutionReviews() {
                         <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#9a6b1f]">
                           {item.title}
                         </p>
-                        <p className="mt-2 text-sm leading-6 text-[#66707b]">
+                        <p className="mt-2 text-sm leading-6 text-[#55616d]">
                           {item.description}
                         </p>
                       </div>
@@ -145,20 +150,36 @@ export default function InstitutionReviews() {
             <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#9a6b1f]">
               Institutional feedback
             </p>
-            <h3 className="mt-3 font-serif text-3xl leading-tight text-[#24313d] md:text-4xl">
+            <h3 className="mt-3 font-serif text-3xl leading-tight text-[#1f2a35] md:text-4xl">
               Experiences from academic partners and decision-makers
             </h3>
-            <p className="mx-auto mt-4 max-w-2xl text-[15px] leading-7 text-[#66707b]">
+            <p className="mx-auto mt-4 max-w-2xl text-[15px] leading-7 text-[#55616d]">
               Explore how institutions describe the quality, responsiveness,
               and academic value of the publishing support they received.
             </p>
+          </div>
+
+          {/* mobile/tablet interaction cue */}
+          <div className="mx-auto mb-5 flex max-w-5xl items-center justify-between rounded-2xl border border-[#e3d8c5] bg-white/85 px-4 py-3 shadow-[0_10px_25px_rgba(15,23,42,0.04)] backdrop-blur-sm sm:px-5 xl:hidden">
+            <div>
+              <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#9a6b1f]">
+                Browse Reviews
+              </p>
+              <p className="mt-1 text-sm leading-6 text-[#55616d]">
+                Read through the cards below and use the navigation controls to
+                explore more feedback.
+              </p>
+            </div>
+            <span className="ml-3 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#d9ecdf] bg-[#eef6f3] text-[#2f7d6b]">
+              <ArrowUpRight className="h-5 w-5" />
+            </span>
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {reviews.map((review, index) => (
               <article
                 key={index}
-                className="group flex min-h-[360px] flex-col justify-between rounded-[1.8rem] border border-[#e9dfcf] bg-white/92 p-7 shadow-[0_18px_50px_rgba(15,23,42,0.05)] backdrop-blur-sm transition duration-300 hover:-translate-y-2 hover:shadow-[0_24px_60px_rgba(15,23,42,0.08)]"
+                className="group flex min-h-[370px] flex-col justify-between rounded-[1.8rem] border border-[#e9dfcf] bg-white/95 p-7 shadow-[0_18px_50px_rgba(15,23,42,0.05)] backdrop-blur-sm transition duration-300 hover:-translate-y-2 hover:shadow-[0_24px_60px_rgba(15,23,42,0.08)]"
               >
                 <div>
                   <div className="flex items-center justify-between">
@@ -177,7 +198,7 @@ export default function InstitutionReviews() {
                     {review.highlight}
                   </p>
 
-                  <h4 className="mt-3 font-serif text-2xl leading-snug text-[#24313d]">
+                  <h4 className="mt-3 font-serif text-2xl leading-snug text-[#1f2a35]">
                     “Highly trusted”
                   </h4>
 
@@ -187,7 +208,7 @@ export default function InstitutionReviews() {
                 </div>
 
                 <div className="mt-8 border-t border-[#eee5d8] pt-5">
-                  <p className="font-semibold text-[#24313d]">{review.name}</p>
+                  <p className="font-semibold text-[#1f2a35]">{review.name}</p>
                   <p className="mt-1 text-sm text-[#5d6773]">{review.role}</p>
                   <p className="mt-1 text-sm font-medium text-[#2f7d6b]">
                     {review.institution}
@@ -199,14 +220,20 @@ export default function InstitutionReviews() {
         </div>
 
         {/* SECTION 4: NAVIGATION CONTROLS */}
-        <div className="mt-12 flex items-center justify-center gap-4 md:mt-14">
-          <button className="flex h-14 w-14 items-center justify-center rounded-full border border-[#d8c9ab] bg-white/85 text-[#2f7d6b] shadow-[0_10px_24px_rgba(15,23,42,0.05)] transition hover:-translate-y-0.5 hover:bg-white">
-            <ChevronLeft className="h-5 w-5" />
-          </button>
+        <div className="mt-12 flex flex-col items-center justify-center gap-4 md:mt-14">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#9a6b1f]">
+            Review navigation
+          </p>
 
-          <button className="flex h-14 w-14 items-center justify-center rounded-full bg-[#2f7d6b] text-white shadow-[0_14px_34px_rgba(47,125,107,0.18)] transition hover:-translate-y-0.5 hover:bg-[#256757]">
-            <ChevronRight className="h-5 w-5" />
-          </button>
+          <div className="flex items-center justify-center gap-4">
+            <button className="flex h-14 w-14 items-center justify-center rounded-full border border-[#d8c9ab] bg-white/88 text-[#2f7d6b] shadow-[0_10px_24px_rgba(15,23,42,0.05)] transition hover:-translate-y-0.5 hover:bg-white">
+              <ChevronLeft className="h-5 w-5" />
+            </button>
+
+            <button className="flex h-14 w-14 items-center justify-center rounded-full bg-[#2f7d6b] text-white shadow-[0_14px_34px_rgba(47,125,107,0.18)] transition hover:-translate-y-0.5 hover:bg-[#256757]">
+              <ChevronRight className="h-5 w-5" />
+            </button>
+          </div>
         </div>
       </div>
     </section>
